@@ -1,0 +1,26 @@
+import java.util.*;
+public class Mentor{
+	public static void main(String[] args){
+		Map<String,List<String>> trainee = new HashMap<String,List<String>>();
+		List <String>li = new LinkedList<String>();
+		li.add("Pramila");
+		li.add("John");
+		trainee.put("Pramod",li);
+		li.clear();
+		li.add("Geeta");
+		li.add("Seeta");
+		trainee.put("Kiran",li);
+		System.out.println(trainee.get("Kiran"));
+		li.clear();
+		li.add("Deepak");
+		li.add("Amol");
+		li.add("Tushar");
+		trainee.put("Jyoti",li);
+		System.out.println(trainee.get("Jyoti"));
+		li.clear();
+		li.add("Ratan");
+		li.add("Kripal");
+		trainee.put("Abhi",li);
+		System.out.println(trainee.get("Surpise"));
+	}
+}
